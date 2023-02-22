@@ -4,9 +4,9 @@ package com.invader.telegram.helperbot.constants.bot;
  * Названия кнопок основной клавиатуры
  */
 public enum ButtonNameEnum {
-    GET_TASKS_BUTTON("Создать файл с заданиями"),
-    GET_DICTIONARY_BUTTON("Скачать словарь"),
-    UPLOAD_DICTIONARY_BUTTON("Загрузить мой словарь"),
+    GET_TASKS_BUTTON("Создать чтонибуть"),
+    GET_DICTIONARY_BUTTON("Скачать текст"),
+    UPLOAD_DICTIONARY_BUTTON("Загрузить текст"),
     HELP_BUTTON("Помощь");
 
     private final String buttonName;
