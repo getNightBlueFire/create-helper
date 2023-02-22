@@ -1,0 +1,5 @@
+telegram:
+  api-url: ${T_URL}
+  webhook-path: ${PATH}
+  bot-name: ${NAME}
+  bot-token: ${TOKEN}
