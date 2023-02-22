@@ -62,50 +62,53 @@ public class CallbackQueryHandler {
 
     private SendMessage getDictionaryTasks(String chatId, String dictionaryId, String fileName) throws IOException {
         try {
-            telegramApiClient.uploadFile(chatId, taskService.getTasksDocument(dictionaryId, fileName));
+            //telegramApiClient.uploadFile(chatId, taskService.getTasksDocument(dictionaryId, fileName));
+            return new SendMessage(chatId, "2Простите я только сегодня появился, еще ничего не умею");
+
         } catch (Exception e) {
             return new SendMessage(chatId, BotMessageEnum.EXCEPTION_TASKS_WTF_MESSAGE.getMessage());
         }
-        return null;
+
     }
 
     private SendMessage getAllDictionaryTasks(String chatId) throws IOException {
         try {
-            telegramApiClient.uploadFile(chatId, taskService.getAllDefaultDictionariesTasksDocument());
+            //telegramApiClient.uploadFile(chatId, taskService.getAllDefaultDictionariesTasksDocument());
+            return new SendMessage(chatId, "1Простите я только сегодня появился, еще ничего не умею");
         } catch (Exception e) {
             return new SendMessage(chatId, BotMessageEnum.EXCEPTION_TASKS_WTF_MESSAGE.getMessage());
         }
-        return null;
     }
 
     private SendMessage getDictionary(String chatId, String dictionaryId) {
         try {
-            telegramApiClient.uploadFile(chatId, dictionaryExcelService.getDictionaryWorkbook(dictionaryId));
+            //telegramApiClient.uploadFile(chatId, dictionaryExcelService.getDictionaryWorkbook(dictionaryId));
+            return new SendMessage(chatId, "3Простите я только сегодня появился, еще ничего не умею");
         } catch (UserDictionaryNotFoundException e) {
             return new SendMessage(chatId, BotMessageEnum.EXCEPTION_DICTIONARY_NOT_FOUND_MESSAGE.getMessage());
         } catch (Exception e) {
             return new SendMessage(chatId, BotMessageEnum.EXCEPTION_DICTIONARY_WTF_MESSAGE.getMessage());
         }
-        return null;
     }
 
     private SendMessage getAllDefaultDictionaries(String chatId) {
         try {
-            telegramApiClient.uploadFile(chatId, dictionaryExcelService.getAllDefaultDictionariesWorkbook());
+            //telegramApiClient.uploadFile(chatId, dictionaryExcelService.getAllDefaultDictionariesWorkbook());
+            return new SendMessage(chatId, "Простите я только сегодня появился, еще ничего не умею");
         } catch (UserDictionaryNotFoundException e) {
             return new SendMessage(chatId, BotMessageEnum.EXCEPTION_DICTIONARY_NOT_FOUND_MESSAGE.getMessage());
         } catch (Exception e) {
             return new SendMessage(chatId, BotMessageEnum.EXCEPTION_DICTIONARY_WTF_MESSAGE.getMessage());
         }
-        return null;
     }
 
     private SendMessage getTemplate(String chatId) {
         try {
-            telegramApiClient.uploadFile(chatId, dictionaryResourceFileService.getTemplateWorkbook());
+            //telegramApiClient.uploadFile(chatId, dictionaryResourceFileService.getTemplateWorkbook());
+            return new SendMessage(chatId, "Простите я только сегодня появился, еще ничего не умею");
         } catch (Exception e) {
             return new SendMessage(chatId, BotMessageEnum.EXCEPTION_TEMPLATE_WTF_MESSAGE.getMessage());
         }
-        return null;
+
     }
 }
