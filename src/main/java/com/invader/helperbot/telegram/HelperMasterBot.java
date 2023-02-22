@@ -24,7 +24,6 @@ public class HelperMasterBot extends SpringWebhookBot {
     String botPath;
     String botUsername;
     String botToken;
-
     MessageHandler messageHandler;
     CallbackQueryHandler callbackQueryHandler;
 
@@ -33,7 +32,6 @@ public class HelperMasterBot extends SpringWebhookBot {
         this.messageHandler = messageHandler;
         this.callbackQueryHandler = callbackQueryHandler;
     }
-
     @Override
     public BotApiMethod<?> onWebhookUpdateReceived(Update update) {
         try {

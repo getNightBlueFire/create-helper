@@ -24,7 +24,6 @@ import com.invader.helperbot.telegram.keyboards.ReplyKeyboardMaker;
 public class MessageHandler {
     DictionaryAdditionService dictionaryAdditionService;
     DictionaryExcelService dictionaryExcelService;
-
     TelegramApiClient telegramApiClient;
     ReplyKeyboardMaker replyKeyboardMaker;
     InlineKeyboardMaker inlineKeyboardMaker;

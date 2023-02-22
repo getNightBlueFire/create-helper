@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Клавиатуры, формируемые в ленте Telegram для получения файлов
+ * Клавиатуры, формируемые в ленте Telegram
  */
 @Component
 public class InlineKeyboardMaker {

@@ -17,7 +17,6 @@ import java.util.Arrays;
 @Configuration
 @EnableRedisRepositories
 public class RedisConfiguration {
-
     @Bean
     public LettuceClientConfigurationBuilderCustomizer lettuceClientConfigurationBuilderCustomizer() {
         return clientConfigurationBuilder -> {
@@ -26,7 +25,6 @@ public class RedisConfiguration {
             }
         };
     }
-
     @Bean
     public RedisTemplate<?, ?> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<byte[], byte[]> template = new RedisTemplate<>();
