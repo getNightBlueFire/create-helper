@@ -1,5 +1,5 @@
 telegram:
-  api-url: "https://api.telegram.org/"
-  webhook-path: "https://master-helper-bot.herokuapp.com/"
-  bot-name: "@DMITRY_KHATSKO"
-  bot-token: "1648197616:AAFODsmiDfnqIiywoQhqIWovAn5mc_VZ6Ik"
+  api-url: ${T_URL}
+  webhook-path: ${PATH}
+  bot-name: ${NAME}
+  bot-token: ${TOKEN}
